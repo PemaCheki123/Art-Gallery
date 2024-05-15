@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="Home.css">
+ 
+</head>
+<body>
+    <div class="gallery">
+        <div class="main_stage">
+          <h1 class="header">Art Gallery</h1>
+          <h2 class="header2">"Arts Lives Longer than Soul"</h2>
+          <img src="Image/81376fc7fcb507a156b2be4f14713e33.jpg" class="Main_Image">
+        </div>
+        <div class="quotes">
+            <p class="quotes1">"Art is the Place to Live in Illusion."</p>
+
+        </div>
+        <div class="thumbnails">
+            <!-- Include thumbnail images here -->
+          
+            <img src="Image/5ec9fdea86bb9b9b351e43ee1cd97912.jpg" alt="Beautiful" data-image="Image/5ec9fdea86bb9b9b351e43ee1cd97912.jpg" loading="lazy">
+            <img src="Image/115c90abcc75d2db13b071b8740a806c.jpg" alt="Art at Spring" data-image="Image/115c90abcc75d2db13b071b8740a806c.jpg" loading="lazy">
+            <img src="Image/38062e460a4f1eb7671af344c1b36128.jpg" alt="Painting at sea" data-image="Image/38062e460a4f1eb7671af344c1b36128.jpg" loading="lazy">
+            <img src="Image/4fc527715d5ac1e39b421001c3eae98c.jpg" alt="Whisper of the wind" data-image="Image/4fc527715d5ac1e39b421001c3eae98c.jpg" loading="lazy">
+            <img src="Image/5ec9fdea86bb9b9b351e43ee1cd97912.jpg" alt="Flowers Painting" data-image="Image/5ec9fdea86bb9b9b351e43ee1cd97912.jpg" loading="lazy">
+            <img src="Image/f33b189c65cd0ca418915f91e7c2967d.jpg" alt="Girls and Flowers" data-image="Image/f33b189c65cd0ca418915f91e7c2967d.jpg" loading="lazy">
+            <img src="Image/f7ab2569ec15bb799eb4c2b3f0ca08b3.jpg" alt="Ocean Waves" data-image="Image/f7ab2569ec15bb799eb4c2b3f0ca08b3.jpg" loading="lazy">
+            <img src="Image/d952f8c872c934d6b7542df3c83a463f.jpg" alt="Water Painting" data-image="Image/d952f8c872c934d6b7542df3c83a463f.jpg" loading="lazy">
+            <img src="Image/1195dee2cb7d8901877d62a7b17f1254.jpg" alt="rain Painting" data-image="Image/1195dee2cb7d8901877d62a7b17f1254.jpg" loading="lazy">
+            <img src="Image/f7ab2569ec15bb799eb4c2b3f0ca08b3.jpg" alt="Fish and the Leaves" data-image="Image/f7ab2569ec15bb799eb4c2b3f0ca08b3.jpg" loading="lazy">
+            <!-- Add more thumbnails as needed -->
+        </div>
+        
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox_container">
+                <img src="" alt="Large Image" class="modal-content" id="modal-image">
+                <div class="caption" id="caption">
+
+            </div>
+        </div>
+            <button class="previous">&laquo; Previous</button>
+            <button class="next"> Next &raquo;</button>
+            
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="Home.js"></script>
+</body>
+</html>

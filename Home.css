@@ -1,0 +1,179 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: bl;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main_stage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  position: relative;
+  align-items: center;
+
+}
+
+.header{
+  position: absolute;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 1; /* Ensure text appears above image */
+}
+
+.line{
+  position: absolute;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 1; /* Ensure text appears above image */
+  padding-top: 30px;
+}
+
+.header2{
+  position: absolute;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  z-index: 1; /* Ensure text appears above image */
+  padding-top: 140px;
+}
+.Main_Image{
+  width: 100%; /* Set width to 100% to fill container */
+  height: 100%; /* Set height to 100% to fill container */
+  transition: transform 0.3s ease;
+  object-fit: cover; /* Ensure image covers entire container */
+}
+.quotes{
+  display: flex;
+  position: relative;
+  height: 100px;
+  background-color: rgb(231, 226, 226);
+  color: black;
+ padding-left: 40%;
+  
+
+}
+.quotes1{
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top:30px;
+}
+
+button.previous {
+  background-color: black;
+  color: white;
+  width: 100px; /* Increase width as needed */
+  height: 50px; /* Increase height as needed */
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Align vertically at 50% from the top */
+  left: 250px; /* Position from the left */
+  transform: translateY(-50%); /* Center vertically */
+  font-size: 15px;
+  border-color: white;
+
+}
+
+button.next {
+  background-color: black;
+  color: white;
+  width: 100px; /* Increase width as needed */
+  height: 50px; /* Increase height as needed */
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Align vertically at 50% from the top */
+  right: 250px; /* Position from the right */
+  transform: translateY(-50%); /* Center vertically */
+  border-color: white;
+  font-size: 15px;
+
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.thumbnails img {
+  width: 450px;
+  height: 450px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.caption {
+  font-size: 18px; /* Adjust font size as needed */
+  color: black; /* Adjust color as needed */
+  padding: 33px 16px;
+  font-weight: bolder;
+  
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  padding-top: 2%;
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 90%;
+  object-fit: cover;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #999;
+}
+
+.lightbox_container{
+  margin: 10px;
+  display: block;
+  margin: auto;
+  max-width: 34%;
+  max-height: 100%;
+  background-color: white;
+}

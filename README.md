@@ -1,5 +1,4 @@
 # Art-Gallery
-# Art Gallery
 
 This repository contains the code for an art gallery website.
 
